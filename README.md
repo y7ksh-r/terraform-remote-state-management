@@ -43,6 +43,8 @@ terraform-s3-backend/
 │── .gitignore             # Ignore Terraform cache files
 │── README.md              # Project documentation
 
+```
+
 ⚙️ Setup & Installation
 📌 Prerequisites
 
@@ -58,25 +60,27 @@ git clone https://github.com/your-username/terraform-remote-state-management.git
 cd terraform-remote-state-management
 
 2️⃣ Initialize Terraform
-
+```
 terraform init
-
+```
 3️⃣ Plan the Infrastructure
-
+```
 terraform plan
-
+```
 4️⃣ Apply the Configuration
-
+```
 terraform apply -auto-approve
-
+```
 5️⃣ Verify State Storage
-
+```
     Check your S3 bucket to confirm terraform.tfstate is stored.
     Check DynamoDB table for the state locking mechanism.
-
+```
 🔐 IAM Policy for S3 & DynamoDB
 
 Ensure your IAM user has the necessary permissions to access S3 and DynamoDB:
+
+```
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -100,12 +104,13 @@ Ensure your IAM user has the necessary permissions to access S3 and DynamoDB:
     }
   ]
 }
+```
 🛑 Cleanup
 
 To destroy the infrastructure and remove all resources:
-
+```
 terraform destroy -auto-approve
-
+```
 💡 Future Enhancements
 
     🔹 Implement CI/CD pipeline for automated state management
