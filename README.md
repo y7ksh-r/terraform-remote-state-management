@@ -1,7 +1,5 @@
 # Terraform Remote State Management with S3 and DynamoDB
 
-![Project Screenshot](path-to-your-screenshot.png)
-
 ## 📌 Project Overview
 
 This project demonstrates how to manage Terraform remote state using **AWS S3** for state storage and **DynamoDB** for state locking. Remote state management is essential in collaborative Terraform workflows to maintain a single source of truth for infrastructure state.
@@ -72,10 +70,9 @@ terraform plan
 terraform apply -auto-approve
 ```
 5️⃣ Verify State Storage
-```
     Check your S3 bucket to confirm terraform.tfstate is stored.
     Check DynamoDB table for the state locking mechanism.
-```
+    
 🔐 IAM Policy for S3 & DynamoDB
 
 Ensure your IAM user has the necessary permissions to access S3 and DynamoDB:
@@ -112,12 +109,10 @@ To destroy the infrastructure and remove all resources:
 terraform destroy -auto-approve
 ```
 💡 Future Enhancements
-
     🔹 Implement CI/CD pipeline for automated state management
     🔹 Add CloudWatch monitoring for state changes
     🔹 Integrate AWS KMS for state file encryption
 
 ✨ Author
-
     Yaksh – GitHub
     Project Repository: GitHub Repo
