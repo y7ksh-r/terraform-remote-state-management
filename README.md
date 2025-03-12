@@ -109,10 +109,10 @@ To destroy the infrastructure and remove all resources:
 terraform destroy -auto-approve
 ```
 💡 Future Enhancements
-    🔹 Implement CI/CD pipeline for automated state management
-    🔹 Add CloudWatch monitoring for state changes
-    🔹 Integrate AWS KMS for state file encryption
+🔹 Implement CI/CD pipeline for automated state management
+🔹 Add CloudWatch monitoring for state changes
+🔹 Integrate AWS KMS for state file encryption
 
 ✨ Author
-    Yaksh – GitHub
-    Project Repository: GitHub Repo
+Yaksh – GitHub
+Project Repository: GitHub Repo
