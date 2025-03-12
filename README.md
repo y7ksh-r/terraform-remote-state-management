@@ -25,7 +25,7 @@ This project demonstrates how to manage Terraform remote state using **AWS S3** 
 
 ## 📂 Project Structure
 
-```sh
+```
 terraform-s3-backend/
 │── remote-infra/
 │   ├── provider.tf        # AWS Provider configuration
@@ -47,10 +47,10 @@ terraform-s3-backend/
 📌 Prerequisites
 
 Ensure you have the following installed:
-
+```
     Terraform
     AWS CLI (configured with proper credentials)
-
+```
 🚀 Steps to Deploy
 1️⃣ Clone the Repository
 
@@ -70,8 +70,9 @@ terraform plan
 terraform apply -auto-approve
 ```
 5️⃣ Verify State Storage
-    Check your S3 bucket to confirm terraform.tfstate is stored.
-    Check DynamoDB table for the state locking mechanism.
+    
+Check your S3 bucket to confirm terraform.tfstate is stored.
+Check DynamoDB table for the state locking mechanism.
     
 🔐 IAM Policy for S3 & DynamoDB
 
@@ -102,17 +103,31 @@ Ensure your IAM user has the necessary permissions to access S3 and DynamoDB:
   ]
 }
 ```
+
+📸 Screenshots
+
+![Screenshot 2025-03-12 180510](https://github.com/user-attachments/assets/296a3ac7-3f39-4e57-aaae-3dc0f0e50796)
+![Screenshot 2025-03-12 165615](https://github.com/user-attachments/assets/82a69a92-04be-4681-a856-ec3fa37944ac)
+
 🛑 Cleanup
 
 To destroy the infrastructure and remove all resources:
 ```
 terraform destroy -auto-approve
 ```
+
 💡 Future Enhancements
+
 🔹 Implement CI/CD pipeline for automated state management
+    
 🔹 Add CloudWatch monitoring for state changes
+    
 🔹 Integrate AWS KMS for state file encryption
 
 ✨ Author
-Yaksh – GitHub
-Project Repository: GitHub Repo
+
+Author -- Yaksh
+
+Github -- 
+
+LinkedIn
